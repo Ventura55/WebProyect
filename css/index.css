@@ -254,6 +254,16 @@
      tu propio estilo (sombras, gradientes suaves, etc.).
 ========================================================= */
 
+header {
+  display: flex;
+  gap: 10px;
+}
+
+header ul {
+  list-style: none;
+  inline-size: none;
+}
+
 header img {
   width: 70px;
   height: 70px;
