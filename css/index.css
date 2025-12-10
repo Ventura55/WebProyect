@@ -254,14 +254,17 @@
      tu propio estilo (sombras, gradientes suaves, etc.).
 ========================================================= */
 
+/**/
 header {
   display: flex;
   gap: 10px;
+  background-color: aqua;
 }
 
-header ul {
+header ul li {
   list-style: none;
   inline-size: none;
+  display: inline-block;
 }
 
 header img {
