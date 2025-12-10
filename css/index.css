@@ -1,0 +1,260 @@
+/* =========================================================
+   UD 3.1 – INTRODUCCIÓN A CSS
+   ---------------------------------------------------------
+   Instrucciones:
+   - Enlaza correctamente esta hoja en el HTML mediante <link>.
+   - NO usar estilos en línea (style="...") ni <style> en el HTML.
+   - Añade aquí un reset básico:
+       · margin: 0; padding: 0; box-sizing...
+       · Quitar viñetas por defecto en listas si lo necesitas.
+   - Configura box-sizing global (content-box o border-box).
+   - Define la fuente base del sitio (font-family) en body o :root.
+   - Define color de fondo general y color del texto.
+   - Ajusta un line-height base para que el texto sea legible.
+   - Demuestra la cascada:
+       · Misma propiedad (por ejemplo color) definida en 2 reglas,
+         y comprueba cuál gana (comentarlo en el CSS).
+========================================================= */
+
+
+
+
+
+/* =========================================================
+   UD 3.2 – SELECTORES (Básicos, de atributo y combinados)
+   ---------------------------------------------------------
+   Instrucciones:
+   - Crea selectores por etiqueta (p, h1, h2, ul, li, a…).
+   - Crea clases reutilizables para tu proyecto:
+       · .boton, .tarjeta, .aviso, .destacado, etc.
+   - Usa al menos 1 ID para una zona única:
+       · #cabecera, #principal, #pie, etc.
+   - Añade agrupación de selectores (h1, h2, h3 { ... }).
+   - Añade selectores combinados:
+       · descendiente:  section p        (p dentro de section)
+       · hijo directo:  nav > a          (a hijo directo de nav)
+       · hermano adyacente:  h2 + p      (p justo después de h2)
+       · hermano general:   h2 ~ p       (p después de h2, mismo padre)
+   - Usa al menos un selector con varias clases juntas:
+       · .tarjeta.destacado { ... }
+========================================================= */
+
+
+
+
+
+/* =========================================================
+   UD  3.3 – TIPOGRAFÍAS Y TEXTO
+   ---------------------------------------------------------
+   Instrucciones:
+   - Define una pila de fuentes (font-family) con varias opciones
+     y una familia genérica al final (sans-serif, serif, monospace…).
+   - Usa tamaños de texto con unidades relativas (rem / em)
+     en lugar de px siempre que sea posible.
+   - Define pesos de fuente (font-weight: 300, 400, 700… o normal/bold).
+   - Define un line-height adecuado para el texto principal.
+   - Usa text-align en algún bloque:
+       · center, right, justify…
+   - Aplica text-transform:
+       · uppercase, lowercase o capitalize en títulos o botones.
+   - Usa letter-spacing o word-spacing en algún texto destacado.
+   - Utiliza al menos una decoración de texto:
+       · text-decoration (por ejemplo, enlaces sin subrayado
+         y subrayado solo al pasar el ratón).
+   - Crea una clase .small o similar para texto secundario más pequeño.
+========================================================= */
+
+
+
+
+
+/* =========================================================
+   UD 3.4 – COLORES Y UNIDADES DE MEDIDA
+   ---------------------------------------------------------
+   Instrucciones:
+   - Incluye colores en al menos 3 formatos diferentes:
+       · HEX      (#3498db)
+       · RGB/RGBA (rgba(0,0,0,0.5))
+       · HSL/HSLA (hsl(200, 40%, 50%))
+   - Usa px para detalles precisos:
+       · bordes, sombras, líneas finas…
+   - Usa rem para tamaños de fuente principales.
+   - Usa % en algún ancho de contenedor o imagen:
+       · width: 80%; max-width: 100%; etc.
+   - Usa em en paddings/márgenes ligados al texto
+     (por ejemplo en botones o tarjetas de texto).
+   - Crea al menos una variable de color en :root (si quieres):
+       · --color-principal, --color-secundario…
+   - Asegúrate de que haya buen contraste texto/fondo.
+========================================================= */
+
+
+
+
+
+/* =========================================================
+   UD 3.5 – FONDOS (BACKGROUND)
+   ---------------------------------------------------------
+   Instrucciones:
+   - Define un background-color para el body o una sección principal.
+   - Usa al menos 1 background-image con url() en un bloque grande
+     (por ejemplo en header o en una sección “hero”).
+   - Controla la repetición:
+       · background-repeat: repeat | no-repeat | repeat-x | repeat-y.
+   - Controla el tamaño del fondo:
+       · background-size: cover | contain | medidas en px/%.
+   - Ajusta la posición:
+       · background-position: center, top, right, etc.
+   - Usa background-attachment: fixed en algún bloque
+     para simular un pequeño efecto tipo “parallax”.
+   - (Opcional) Usa múltiples fondos en un mismo elemento:
+       · background: url("icono.png") no-repeat 10px 10px,
+                    url("textura.png") repeat;
+   - Demuestra el uso de la propiedad abreviada:
+       · background: color image repeat position / size attachment;
+========================================================= */
+
+
+
+
+
+/* =========================================================
+   UD 3.6 – MODELO DE CAJA (Box Model)
+   ---------------------------------------------------------
+   Instrucciones:
+   - Usa margin (individual y shorthand):
+       · margin-top / margin-bottom…
+       · margin: 1rem auto; etc.
+   - Usa padding (individual y shorthand) en cajas de contenido.
+   - Aplica border (color, estilo, ancho) a tarjetas o bloques.
+   - Aplica border-radius para bordes redondeados en:
+       · botones, tarjetas, imágenes, etc.
+   - Usa outline y outline-offset al menos en un elemento
+     (por ejemplo, para resaltar el foco de un botón o enlace).
+   - Distingue entre display:
+       · block, inline, inline-block en distintos elementos.
+   - Controla width y height en alguna caja o imagen.
+   - Asegúrate de usar box-sizing: border-box de forma global
+     (si no lo hiciste arriba, hazlo aquí).
+   - Crea al menos una “tarjeta” (div) con:
+       · padding interno
+       · margen externo
+       · borde
+       · borde redondeado
+========================================================= */
+
+
+
+
+
+/* =========================================================
+   UD 3.7 – PSEUDOCLASES Y PSEUDOELEMENTOS
+   ---------------------------------------------------------
+   Pseudoclases (estado):
+   - Aplica pseudoclases a enlaces:
+       · a:link, a:visited, a:hover, a:active
+         (usa colores diferentes para ver la diferencia).
+   - Usa :focus en campos de formulario o enlaces
+     para mejorar la accesibilidad (outline visible).
+   - Usa pseudoclases de formularios:
+       · :required / :optional
+       · :valid / :invalid
+       · :in-range / :out-of-range (en un input[type="number"])
+   - Usa pseudoclases estructurales:
+       · :first-child, :last-child, :nth-child(even/odd)
+         en una lista o tabla para crear efecto “zebra”.
+       · :not(...) para excluir algún elemento de un estilo.
+   - Usa :root para declarar variables de color o tamaños.
+
+   Pseudoelementos (partes del elemento / contenido extra):
+   - ::before y ::after:
+       · Añade algún icono, comillas o detalle visual
+         antes o después del contenido de un título o tarjeta.
+       · Recuerda: content: "…";
+   - ::first-letter:
+       · Aplica un estilo especial a la primera letra
+         de un párrafo de introducción (tipo revista).
+   - ::first-line:
+       · Cambia el estilo de la primera línea de un texto largo.
+   - ::selection:
+       · Cambia el color de fondo y texto cuando el usuario
+         selecciona texto con el ratón.
+   - ::marker (si usas listas):
+       · Cambia el color/tamaño de las viñetas o números.
+========================================================= */
+
+
+
+
+
+/* =========================================================
+   UD 3.8 – ENLACES, LISTAS, TABLAS E IMÁGENES
+   ---------------------------------------------------------
+   ENLACES:
+   - Define estilos base para los enlaces:
+       · color, text-decoration, font-weight…
+   - Usa pseudoclases de enlace:
+       · a:link, a:visited, a:hover, a:active, a:focus
+         (respetando el orden LVHA).
+   - Asegúrate de que se note claramente cuándo un enlace
+     es interactivo (cambio de color, fondo, subrayado…).
+
+   LISTAS:
+   - Aplica diferentes list-style-type en alguna lista:
+       · disc | circle | square
+       · decimal | decimal-leading-zero
+       · lower-roman | upper-roman
+       · lower-alpha | upper-alpha
+       · none (para menús sin viñetas)
+   - Crea al menos una lista que funcione como menú horizontal
+     (sin viñetas, elementos en línea o inline-block).
+
+   TABLAS:
+   - Crea estilos para una tabla de datos:
+       · Bordes en celdas (th, td).
+       · border-collapse: collapse o separate (elige y pruébalos).
+       - Usa padding en las celdas para mejorar la legibilidad.
+   - Aplica filas alternas con :nth-child(even/odd) (efecto “zebra”).
+   - Usa tr:hover para resaltar la fila al pasar el ratón.
+   - Coloca el título de la tabla (caption) arriba o abajo
+     usando caption-side.
+
+   IMÁGENES:
+   - Asegura que al menos una imagen sea responsiva:
+       · img { max-width: 100%; height: auto; }
+   - Usa object-fit en una imagen tipo “banner”:
+       · object-fit: cover | contain.
+   - Centra alguna imagen horizontalmente:
+       · text-align: center en el contenedor (imagen inline),
+         o display: block + margin: 0 auto en la propia img.
+   - (Opcional) Aplica algún filter sencillo:
+       · grayscale, blur, brightness, etc.
+========================================================= */
+
+
+
+
+
+/* =========================================================
+   ESPACIO EXTRA PARA EL ALUMNADO – ESTILOS DEL PROYECTO APS
+   ---------------------------------------------------------
+   Instrucciones:
+   - Personaliza el diseño general de tu proyecto APS:
+       · Cabecera (header) con fondo, tipografía y espaciados.
+       · Navegación (nav / menú) con enlaces claramente visibles.
+       · Tarjetas (por ejemplo de animales, usuarios, recursos...)
+         con fondo, borde, sombra, padding y border-radius.
+       · Formularios con campos diferenciados, estados de error
+         o éxito (usando colores y pseudoclases de formulario).
+       · Botones con estados :hover y :active.
+   - Aplica al menos una mejora de accesibilidad:
+       · Enfoque visible al navegar con teclado (outline en :focus).
+       · Buen contraste en botones y enlaces.
+   - Añade cualquier detalle extra que represente
+     tu propio estilo (sombras, gradientes suaves, etc.).
+========================================================= */
+
+header img {
+  width: 70px;
+  height: 70px;
+}
